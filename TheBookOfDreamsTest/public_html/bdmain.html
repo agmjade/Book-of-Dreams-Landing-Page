@@ -1,0 +1,170 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Book of Dreams</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="bdStyle.css">
+        <script type="text/javascript">
+           var image1 = new Image();
+           image1.src = "book1.JPG";
+           var image2 = new Image();
+           image2.src = "book2.JPG";
+           var image3 = new Image();
+           image3.src = "book3.JPG";           
+        </script>
+    </head>
+    <body>
+        <div id="container">
+        <section class="header">
+            <div id ="topHeader">
+                <div id="compName">
+                    <h4>The Book of Dreams</h4>
+                </div>
+                <div id="socialLinks">
+                    <ul id="socialMedia">
+                        <li id="fb">
+                            <a href="https://www.facebook.com/www.thebookofdreams.org?fref=ts">Facebook</a>
+                        </li>
+                        <li id="blog">
+                            <a href="http://thebookofdreams.tumblr.com/">Their Stories</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="imageHeader" align="center">
+                <img id="book" src="book1.JPG" height="230" width="970">
+                <script type ="text/javascript">
+                    var count = 1;                    
+                    function slideit()
+                    {
+                        document.images.book.src=eval("image"+count+".src");
+                        if(count <= 2) 
+                        {
+                            count++;
+                        }
+                        else
+                        {
+                            count = 1;
+                        }
+                    }
+                    setInterval("slideit()",2000);
+
+                </script>
+            </div>
+        </section>
+        <section class="main">
+            <div id ="about">
+                <div id="aboutBD">
+                    <h2>About The Book of Dreams</h2>
+                    <p class="info">It starts with a dream.</p>
+                    <p class="description">
+                        This page was first established in 2011 via Facebook.
+                        The goal was to create a platform for individuals who are pursuing their passions, 
+                        to share their unique stories and crafts.
+                        Although this journey has been rough, there are no regrets.
+                        Presently, we are pushing forward and working hard to bring you the material that held to the highest standards.
+                        We just humbly ask that you be patient during this process.
+                    </p>
+                </div>
+                <div id="aboutKevin">
+                    <h2>About Kevin Santos</h2>
+                    <p class="info">Founder</p>
+                    <p class="description">
+                        Kevin Michael Dorotheo Santos is a second generation Filipino-American who was born in 
+                        Hayward, California on February 29, 1992. Kevin was raised in a bi-lingual household and 
+                        speaks tagalog and english fluently. Kevin is a spoken word artist and has experience working 
+                        with the youth. He has coached basketball camps through Legarza and Merill F. West High School. 
+                        Kevin has also recently earned a Bachelor’s degree in Communications and a minor in Health 
+                        Education at San Francisco State University. Kevin has also competed as a member of SF State’s 
+                        speech and debate team. He currently works as an athletics coordinator through the Boys and Girls 
+                        Club and is an active educator through Pin@y Educational Partnerships. He hopes to pursue a Masters 
+                        in Counseling to aid in the development and empowerment of our youth.
+                    </p>
+                </div>
+            </div>
+            <div id="contact">
+                <h2 style="border-bottom: solid 1px">Contact Us</h2>
+                <p class="description">
+                Whether you have questions or a story to share,
+                we always like to hear from our readers. We will
+                take all e-mails into consideration and we appreciate
+                your feedback. Thank you.
+                </p>
+                <form action="" name="contact_form" id="contact-form" method="post">
+                <ul id="contractForm">
+                    <li id="name">
+                        <label for="contact-name">Name</label>
+                        <input type="text" name="contact-name" id="contact-name" value class="required-field">
+                    </li>
+                    <li id="email">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="e-mail" class="required-field-email">
+                    </li>
+                    <li id="textarea">
+                        <label for="comments-text">Message</label>
+                        <textarea name="message" id="message" rows="8" cols="10" class="required-field"></textarea>
+                    </li>
+                    <li id="button" style="text-align: center">
+                        <input type="hidden" name="submitted" id="submitted" value="true">
+                        <button type="submit" onClick="validation();">Send Message</button>
+                    </li>
+                </ul>
+                </form>
+            </div>            
+        </section>
+        <section class="footer">
+            <div id="copyright">
+                Copyright 2015 The Book of Dreams 
+            </div>
+        </section>
+        
+        <p id="invalid1"></p>
+	<p id="invalid2"></p>
+	<p id="invalid3"></p>
+            <script type="text/javascript">
+		var invalid = 0;
+		function validation() {
+			invalid = 0;
+			//contact-name
+                        if (document.getElementById("contact-name").value==="") {
+				//jtest= document.getElementById("invalid1").innerHTML = "Please enter your name.";
+				document.getElementById("contact-name").style.backgroundColor = 'red';
+				jtest1= document.getElementById("contact-name").value = "Please enter your name.";
+				alert(jtest1);
+				invalid += 1;
+			}
+			else {
+				document.getElementById("invalid1").innerHTML = "";
+			}
+			//email
+			if ((document.getElementById("e-mail").value.indexOf("@")) === -1) {
+				//document.getElementById("invalid4").innerHTML = "Please enter your email address.";
+                                document.getElementById("e-mail").style.backgroundColor = 'red';
+				jtest1= document.getElementById("e-mail").value = "Please enter your email address.";
+				alert(jtest1);
+				invalid += 1;
+			}
+			else {
+				document.getElementById("invalid2").innerHTML = "";
+			}
+			//phone number
+			if (document.getElementById("message").value==="") {
+				//document.getElementById("invalid5").innerHTML = "Please enter your phone number.";
+                                document.getElementById("message").style.backgroundColor = 'red';
+				jtest1= document.getElementById("message").value = "Please enter your message.";
+				alert(jtest1);
+				invalid += 1;
+			}
+			else {
+				document.getElementById("invalid3").innerHTML = "";
+                        }
+                        location.reload();
+                    }
+	</script>
+        </div>
+    </body>
+</html>

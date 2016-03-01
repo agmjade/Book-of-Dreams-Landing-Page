@@ -1,0 +1,285 @@
+/*
+p {
+    margin: 0px;
+}
+
+
+.nav {
+    display: inline-block;
+    margin-top: 0px;
+    }
+
+.icons {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    }
+    
+.product {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+    
+a {
+    color: black;
+    font-family: arial;
+    font-size: 12px;
+}
+
+#about {
+    text-align: center;
+}
+
+.about-header {
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+}
+
+#about-main {
+    text-align: center;
+    float: left;
+    width: 70%;
+}
+
+#about-header {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+
+#info {
+    text-align: center;
+    font-family: cursive;
+    font-size: 17px;
+    margin: 0px;
+}
+
+#description {
+    text-align: center;
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.entry1 {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-right: 0px;
+}
+
+.entry2 {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-right: 0px;
+}
+
+#contact {
+    text-align: center;
+    overflow: hidden;
+    width: 30%;
+}
+
+.contact {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-right: 0px;
+    border-left: solid 2px;
+}
+
+#contact-header {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#contact-name, #email {
+    width: 175px;
+}
+
+#message {
+    margin: 4px 0px 0px;
+    width: 175px;
+    height: 100px;
+}
+
+
+h2 {
+    margin: 0px;
+}
+*/
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container 
+{
+   min-height:100%;
+   width: 100%;
+   position:relative;
+}
+
+.header 
+{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    color: whitesmoke;
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+h4 
+{
+    float: left;
+    text-align: right;
+    margin: 0px;
+    display: block;
+    width: 55%;
+}
+
+a 
+{
+    color: whitesmoke;
+    font-family: arial;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#socialMedia
+{
+    text-align: right;
+    display: inline-block;
+    margin: 0;
+    margin-left: 322px;
+}
+
+#fb
+{
+    float: left;
+    padding-right: 10px;
+    border-right: 1px solid whitesmoke;
+}
+
+#blog
+{
+    float: right;
+    padding-left: 10px;
+}
+
+#imageHeader
+{
+    height: 228px;
+    background-image: url(linedpaper.png);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main
+{
+    padding: 10px;
+    padding-bottom: 60px;
+    display: inline-block;
+    background-image: url(linedpaper.png);
+
+}
+
+#about
+{
+    float: left;
+    width: 60%;
+    margin: 15px;
+}
+
+h2
+{
+    font-family: arial;
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.info
+{
+    font-family: cursive;
+    font-size: 10pt;
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    border-bottom: solid 1px;
+}
+
+#contact
+{
+    float: right;
+    width: 35%;
+    margin: 15px;
+    overflow: hidden;
+}
+
+li 
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+label
+{
+    font-family: arial;
+}
+
+#contact-name, #e-mail {
+    width: 175px;
+    margin: 5px;
+}
+
+#message {
+    margin: 4px 0px 0px;
+    width: 175px;
+    height: 100px;
+}
+
+.description
+{
+    font-family: arial;
+    font-size: 12px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer
+{
+    float: bottom;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: arial;
+    margin: 0px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+#copyright
+{
+    text-align: center;
+    font-size: 6pt;
+}
